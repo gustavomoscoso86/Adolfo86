@@ -108,3 +108,29 @@ body {
   border-radius: 6px;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
+
+@media (max-width: 600px) {
+  .contenido-principal {
+    padding: 20px 10px;
+  }
+
+  .menu button {
+    font-size: 16px;
+    padding: 16px;
+  }
+
+  .comentarios textarea {
+    height: 80px;
+    font-size: 14px;
+  }
+
+  .comentarios button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .header {
+    font-size: 90%;
+    padding: 30px 10px;
+  }
+}
