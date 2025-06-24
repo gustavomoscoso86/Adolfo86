@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Página Web</title>
+  <link rel="stylesheet" href="/css/estilos.css" />
+</head>
+<body>
+
+  <!-- Pantalla principal con menú -->
+  <div id="menu-principal" class="vista activa">
+    <div class="header">
+      <h1>Proyecto Produccion 2025</h1>
+      <p>Explora las secciones desde el menú</p>
+    </div>
+
+    <div class="menu">
+      <button onclick="mostrarVista('inicio')">Inicio</button>
+      <button onclick="mostrarVista('servicios')">Servicios</button>
+      <button onclick="mostrarVista('acerca')">Acerca de</button>
+      <button onclick="mostrarVista('contacto')">Contacto</button>
+    </div>
+  </div>
+ 
+  <div class="comentarios">
+  <h3>Comentarios</h3>
+  <textarea id="comentario" placeholder="Escribe tu comentario aquí..."></textarea>
+  <button onclick="enviarComentario()">Enviar</button>
+  <p id="respuesta"></p>
+
+  <!-- Lista de comentarios guardados -->
+  <ul id="lista-comentarios"></ul>
+</div>
+
+
+  <!-- Vistas independientes -->
+  <div id="inicio" class="vista">
+    <h2>Inicio</h2>
+    <p>Este es el contenido exclusivo de la página de inicio.</p>
+    <button onclick="volverAlMenu()">Volver al menú</button>
+  </div>
+
+  <div id="servicios" class="vista">
+    <h2>Servicios</h2>
+    <p>Descripción de los servicios.</p>
+    <button onclick="volverAlMenu()">Volver al menú</button>
+  </div>
+
+  <div id="acerca" class="vista">
+    <h2>Acerca de</h2>
+    <p>Información sobre ti o tu proyecto.</p>
+    <button onclick="volverAlMenu()">Volver al menú</button>
+     <section class="photo-album">
+         <h2 class="album-title">Album de Fotos</h2>
+          <div class="gallery">
+            <img src="imagenes/simulacro1.jpeg" alt="Foto 1">
+            <img src="imagenes/simulacro2.jpeg" alt="Foto 2">
+            <img src="imagenes/simulacro3.jpeg" alt="Foto 3">
+            <img src="imagenes/simulacro4.jpeg" alt="Foto 4">
+            <img src="imagenes/simulacro5.jpeg" alt="Foto 5">
+            <img src="imagenes/simulacro6.jpeg" alt="Foto 6">
+           
+          </div>
+        </section>
+  </div>
+
+  <div id="contacto" class="vista">
+    <h2>Contacto</h2>
+    <p>Formulario de contacto o redes sociales.</p>
+    <button onclick="volverAlMenu()">Volver al menú</button>
+  </div>
+
+  <script src="/js/mostrarPagina.js"></script>
+</body>
+</html>
